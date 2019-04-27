@@ -34,14 +34,22 @@
         height: 200px;
         font-size: 18px;
       }
+      .actionButton {
+        background-color: lightblue;
+        color: black;
+        font-size: 32px;
+      }
     </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
   </head>
   <body>
     <div id="wrapper">
       <h1>Article Scraper</h1>
+      <a class="actionButton" href="/scrape">Scrape new articles</a>
+      <a class="actionButton" href="/delete">Clear</a>
       <h2><i>Abram Wingle</i></h2>
-      <a href="/scrape">scrape</a>
-      <a href="/api/delete">Clear</a>
+      
 
       <div id="articles"></div>
       <div id="notes"></div>
