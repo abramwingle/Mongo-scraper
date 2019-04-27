@@ -27,7 +27,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // Connect to the Mongo DB
-mongoose.connect("mongodb://localhost/articleDB", { useNewUrlParser: true });
+mongoose.connect("mongodb://abramwingle:@Abram111@ds149146.mlab.com:49146/heroku_mt08rpg3", { useNewUrlParser: true });
 
 // Routes
 
@@ -101,7 +101,7 @@ app.get("/api/delete", function(req, res) {
   
   mongoose.connection.db.dropDatabase();
 
-  res.send("cleared the database");
+  res.end();
 
 
 });
